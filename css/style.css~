@@ -1,0 +1,187 @@
+:root {
+	--lightgrey: #808080;
+	--grey: #202020;
+	--white: #e5e5e5;
+	--orange: #fc5305;
+	--green: #2dc403; 
+	--darkgrey: #2d2d2d;
+}
+
+body, html {
+	height:100vh;
+	width: 100vw;
+	overflow: auto;
+	margin:0;
+	scroll-behavior: auto;
+}
+
+p,h1,h2,h3,h4,h5,h6,span,code { margin-left: 1%; }
+
+#main p {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+div#main {
+	width: 60%;
+	margin:auto;
+	word-wrap:break-word;
+	margin-top: 1% !important;
+}
+
+div#menu {
+	margin:auto;
+	text-align:center;
+	border-bottom: 2px solid var(--lightgrey);
+	padding-bottom: 1%;
+	padding-top: 1%;
+	background-color: var(--darkgrey);
+	width: 100%;
+}
+div#menu a {
+	margin-left: 1%;
+	margin-right: 1%;
+}
+div#menu h1 { margin-top: 0; }
+
+div#footer {
+	width: 60%;
+	word-wrap:break-word;
+	border-top: 1px solid var(--lightgrey);
+	margin-top: 5% !important;
+	margin:auto;
+	padding-bottom: 5%;
+	text-align:center;
+}
+
+.code,pre{
+	border: 2px solid var(--lightgrey);
+	background-color: var(--darkgrey);
+	color: var(--white);
+	font-family: monospace;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	font-size: 0.95rem;
+	padding-left: 0.2%;
+	font-family:monospace;
+}
+
+div#main .nomargin {
+	margin-top: 0.5% !important;
+	margin-bottom: 0.5% !important;
+}
+
+.postitem {
+	margin-top: 1.5%;
+	margin-bottom: 1.5%;
+} 
+
+p#fediring {
+	display:inline-block;
+	margin-bottom: 0;
+}
+
+#fediring a { font-size: 1.1rem; }
+
+.box {
+	border: 2px solid var(--lightgrey);
+	background-color: var(--darkgrey);
+	color: var(--white);
+	padding: 1%;
+}
+
+textarea, input {
+
+	border: 2px solid var(--lightgrey);
+	background-color: var(--darkgrey);
+	color: var(--white);
+}
+
+/* Adjust the size of elements */
+h1 { font-size: 2.1rem; }
+h2 { font-size: 1.7rem; }
+h3 { font-size: 1.4rem; }
+h4 { font-size: 1.1rem; }
+h5 { font-size: 0.9rem; }
+h6 { font-size: 0.7rem; }
+p,a { font-size: 1.05rem; }
+
+/* Style links */
+
+a {
+	color: var(--orange);
+	font-family: monospace;
+	transition: background-color 0.1s, color 0.1s;
+}
+
+a:hover {
+	background-color: var(--orange);
+	color: var(--white);
+}
+
+.casual, p,h1,h2,h3,h4,h5,h6,span,li, label{
+	font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir, "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica, "Helvetica Neue", sans-serif;
+	color: var(--white);
+}
+
+body,html { background-color: var(--grey); }
+
+body::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none !important;
+	background: repeating-linear-gradient(
+	0deg,
+	rgba(0,0,0,0.25),
+	rgba(0,0,0,0.25) 1px,
+	transparent 1px,
+	transparent 2px
+	);
+}
+
+#main p, #main h1, #main h2,#main h3,#main h4,#main h5, #main h6 {
+	transition: background-color 0.1s, color 0.1s;
+}
+
+#main p:hover,#main h1:hover, #main h2:hover, #main h3:hover, #main h4:hover, #main h5:hover,#main h6:hover{
+	background-color: var(--white);
+	color: var(--grey);
+}
+
+::-moz-selection { /* Code for Firefox */
+	background-color: var(--orange);
+	color: var(--white);
+}
+
+::selection {
+	background-color: var(--orange);
+	color: var(--white);
+}
+
+
+input#fix221 {
+	margin-top: 3% !important;
+	display: block !important;
+}
+
+@media only screen and (max-width: 647px) {
+    #main {
+	width: 70% !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #main {
+	width: 87.5% !important;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #main {
+	width: 97% !important;
+    }
+}
